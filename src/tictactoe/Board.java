@@ -12,7 +12,7 @@ public class Board extends GridPane  {
 	/** Size of squares on the board. */
 	public static final int TILESIZE = 100;
 	/** gap between rows and cols. May be zero. */
-	public static final double GAP = 2;
+	public static final double GAP = 0.75;
 	/** The actual squares on the board. */
 	private BoardSquare[][] board;
 
@@ -24,7 +24,7 @@ public class Board extends GridPane  {
 		// is this necessary? We can get the squares directly from GridPane.
 		board = new BoardSquare[rows][cols];
 		// for tic-tac-toe the squares are all same color
-		Color squareColor = Color.LIGHTGRAY; // nice boring color
+		Color squareColor = Color.DARKCYAN; // nice boring color
 		// draw border around each square
 		super.setGridLinesVisible(true);
 		super.setHgap(GAP);
