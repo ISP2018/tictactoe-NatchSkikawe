@@ -24,7 +24,7 @@ public class Board extends GridPane  {
 		// is this necessary? We can get the squares directly from GridPane.
 		board = new BoardSquare[rows][cols];
 		// for tic-tac-toe the squares are all same color
-		Color squareColor = Color.DARKCYAN; // nice boring color
+		Color squareColor = Color.DARKCYAN;
 		// draw border around each square
 		super.setGridLinesVisible(true);
 		super.setHgap(GAP);
