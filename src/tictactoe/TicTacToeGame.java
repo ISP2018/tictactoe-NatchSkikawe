@@ -7,7 +7,7 @@ import javafx.scene.Node;
 import java.util.function.Predicate;
 
 /**
- * Bring code from board.java to use in the game
+ * Bring code from Board.java to use in the game.
  */
 public class TicTacToeGame {
 	private final int boardsize;
