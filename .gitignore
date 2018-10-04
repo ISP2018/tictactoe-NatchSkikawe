@@ -9,3 +9,4 @@ lib/
 runtests.sh
 demo-ci.jar
 build-all.jar
+.idea

@@ -1,6 +1,6 @@
 language: java
 
-# This is from https://docs.travis-ci.com/user/languages/java/
+# This is  from https://travis-ci.com/NatchSkikawe/tictactoe/jobs/149672813/config
 # You must have a target named "deps" in your ant build.xml file.
 # Use this to install dependencies.
 
