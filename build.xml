@@ -58,7 +58,7 @@
 
 	<!-- compile the source code -->
 	<target name="compile" depends="init" description="Compile source code" >
-		<javac srcdir="src" destdir="bin" includeantruntime="false" />
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="false" />
 	</target>
 
 	<!-- compile the test code -->
@@ -82,14 +82,16 @@
 			</batchtest>
 		</junit>
 	</target>
-	 <target name="jar">
-        <mkdir dir="build/jar"/>
-        <jar destfile="build/jar/tictactoe.jar" basedir="build/classes">
-            <manifest>
-                <attribute name="Main" value="Main.TicTacToeTest"/>
-            </manifest>
-        </jar>
-    </target>
+<target name="jar" depends="compile"
+			description="Create runnable JAR file of project">
+		<jar destfile="dist/TicTacToe.jar"
+			 basedir="base dir containing all the stuff to put in jar file">
+			<manifest>
+				<attribute name = "Main-Class" value = "tictactoe.Main"/>
+			</manifest>
+		</jar>
+	</target>
+
 
 
 </project>
